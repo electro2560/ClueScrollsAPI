@@ -9,9 +9,15 @@ import org.bukkit.plugin.Plugin;
 
 /**
  * @since 2.1.0
- * @version 3.2.7
+ * @version 3.7.3
  */
 public interface ClueScrollsAPI {
+	
+	/**
+	 * Get ClueScrolls version
+	 * @return version
+	 */
+	public String getVersion();
 	
 	/**
 	 * Get a list of all tiers

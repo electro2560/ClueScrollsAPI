@@ -11,19 +11,51 @@ import org.bukkit.plugin.Plugin;
  * @since 2.1.0
  * @version 3.7.3
  */
-public interface ClueScrollsAPI {
+public abstract class ClueScrollsAPI {
+	
+	//Internal
+	private static ClueScrollsAPI instance;
+	
+	/**
+	 * Check if the ClueScrollsAPI implementation is available
+	 * 
+	 * @return true if ClueScrollsAPI available or false if not available
+	 */
+	public static boolean hasImplementation() {
+		return instance != null;
+	}
+	
+	/**
+	 * To be used internally ClueScrolls
+	 * 
+	 * @param instance
+	 */
+	public static void setImplementation(ClueScrollsAPI instance) {
+		ClueScrollsAPI.instance = instance;
+	}
+	
+	/**
+	 * Access the ClueScrollsAPI
+	 * 
+	 * @return ClueScrollsAPI instance
+	 */
+	public static ClueScrollsAPI getInstance() {
+		if(!hasImplementation()) throw new NullPointerException("ClueScrolls not found.");
+	    
+		return instance;
+	}
 	
 	/**
 	 * Get ClueScrolls version
 	 * @return version
 	 */
-	public String getVersion();
+	public abstract String getVersion();
 	
 	/**
 	 * Get a list of all tiers
 	 * @return List of all tiers
 	 */
-	public List<String> getTiers();
+	public abstract List<String> getTiers();
 	
 	/**
 	 * Get a random tier cluescroll
@@ -34,7 +66,7 @@ public interface ClueScrollsAPI {
 	 * @since 2.1.0
 	 * @version 2.1.8
 	 */
-	public ItemStack getRandomScroll(String mystery);
+	public abstract ItemStack getRandomScroll(String mystery);
 	
 	/**
 	 * Get a random tier cluescroll
@@ -45,7 +77,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getRandomScroll(String mystery, String playerUUID);
+	public abstract ItemStack getRandomScroll(String mystery, String playerUUID);
 	
 	/**
 	 * Get a random tier cluescroll
@@ -56,7 +88,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getRandomScroll(String mystery, UUID playerUUID);
+	public abstract ItemStack getRandomScroll(String mystery, UUID playerUUID);
 	
 	/**
 	 * Get a random tier cluescroll
@@ -67,7 +99,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getRandomScroll(String mystery, Player player);
+	public abstract ItemStack getRandomScroll(String mystery, Player player);
 	
 	/**
 	 * Generate a cluescroll of a random tier
@@ -79,7 +111,7 @@ public interface ClueScrollsAPI {
 	 * @since 2.1.0
 	 * @version 2.1.8
 	 */
-	public ItemStack getScroll(String type);
+	public abstract ItemStack getScroll(String type);
 	
 	/**
 	 * Generate a cluescroll of a random tier
@@ -91,7 +123,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getScroll(String type, String playerUUID);
+	public abstract ItemStack getScroll(String type, String playerUUID);
 	
 	/**
 	 * Generate a cluescroll of a random tier
@@ -103,7 +135,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getScroll(String type, UUID playerUUID);
+	public abstract ItemStack getScroll(String type, UUID playerUUID);
 	
 	/**
 	 * Generate a cluescroll of a random tier
@@ -115,7 +147,7 @@ public interface ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public ItemStack getScroll(String type, Player player);
+	public abstract ItemStack getScroll(String type, Player player);
 	
 	/**
 	 * To create a custom clue, you must pass your plugin, the name of the clue
@@ -139,6 +171,6 @@ public interface ClueScrollsAPI {
 	 * @param clueName
 	 * @param clueConfigData
 	 */
-	public CustomClue registerCustomClue(Plugin plugin, String clueName, ClueConfigData... clueConfigData);
+	public abstract CustomClue registerCustomClue(Plugin plugin, String clueName, ClueConfigData... clueConfigData);
 	
 }

@@ -9,7 +9,7 @@ import org.bukkit.plugin.Plugin;
 
 /**
  * @since 2.1.0
- * @version 3.7.3
+ * @version 3.8.6
  */
 public abstract class ClueScrollsAPI {
 	
@@ -77,18 +77,7 @@ public abstract class ClueScrollsAPI {
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public abstract ItemStack getRandomScroll(String mystery, String playerUUID);
-	
-	/**
-	 * Get a random tier cluescroll
-	 * 
-	 * Will obey bind option
-	 * 
-	 * @param playerUUID UUID of player who will be given this scroll
-	 * @return A cluescroll
-	 * @since 2.1.8
-	 */
-	public abstract ItemStack getRandomScroll(String mystery, UUID playerUUID);
+	public abstract ItemStack getRandomScroll(String mystery, UUID playerUUID, String playerName);
 	
 	/**
 	 * Get a random tier cluescroll
@@ -119,23 +108,11 @@ public abstract class ClueScrollsAPI {
 	 * Will obey bind option
 	 * 
 	 * @param type tier type
-	 * @param playerUUID String of player UUID who will be given this scroll
-	 * @return A cluescroll
-	 * @since 2.1.8
-	 */
-	public abstract ItemStack getScroll(String type, String playerUUID);
-	
-	/**
-	 * Generate a cluescroll of a random tier
-	 * 
-	 * Will obey bind option
-	 * 
-	 * @param type tier type
 	 * @param playerUUID UUID of player who will be given ths scroll
 	 * @return A cluescroll
 	 * @since 2.1.8
 	 */
-	public abstract ItemStack getScroll(String type, UUID playerUUID);
+	public abstract ItemStack getScroll(String type, UUID playerUUID, String playerName);
 	
 	/**
 	 * Generate a cluescroll of a random tier

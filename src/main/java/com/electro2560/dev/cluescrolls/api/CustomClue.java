@@ -4,7 +4,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 /**
- * @version 3.7.3
+ * @version 4.0.3
  */
 public interface CustomClue {
 	
@@ -36,5 +36,15 @@ public interface CustomClue {
 	 */
 	public void handle(Player player, ClueDataPair... clueDataPairs);
 	
+	/**
+	 * Call a clue for a player. You must specify all the clue data as registered for the clue.
+	 * For clue data you would like to ignore or treat as a wild card, the ClueDataPair value
+	 * can simply be null.
+	 * 
+	 * @param player
+	 * @parm amount
+	 * @param clueDataPairs
+	 */
+	public void handle(Player player, int amount, ClueDataPair... clueDataPairs);
 	
 }

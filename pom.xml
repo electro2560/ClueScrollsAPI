@@ -5,7 +5,7 @@
 
 	<groupId>com.electro2560.dev.cluescrolls</groupId>
 	<artifactId>ClueScrollsAPI</artifactId>
-	<version>3.8.6</version>
+	<version>4.0.3</version>
 	<packaging>jar</packaging>
 
 	<name>ClueScrollsAPI</name>

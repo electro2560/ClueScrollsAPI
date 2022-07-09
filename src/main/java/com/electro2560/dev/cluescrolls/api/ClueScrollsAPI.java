@@ -9,7 +9,7 @@ import org.bukkit.plugin.Plugin;
 
 /**
  * @since 2.1.0
- * @version 3.8.6
+ * @version 4.8.6
  */
 public abstract class ClueScrollsAPI {
 	
@@ -60,32 +60,11 @@ public abstract class ClueScrollsAPI {
 	/**
 	 * Get a random tier cluescroll
 	 * 
-	 * Will not obey bind option
-	 * 
-	 * @return A cluescroll
-	 * @since 2.1.0
-	 * @version 2.1.8
-	 */
-	public abstract ItemStack getRandomScroll(String mystery);
-	
-	/**
-	 * Get a random tier cluescroll
-	 * 
-	 * Will obey bind option
-	 * 
-	 * @param playerUUID String of player UUID who will be given this scroll
-	 * @return A cluescroll
-	 * @since 2.1.8
-	 */
-	public abstract ItemStack getRandomScroll(String mystery, UUID playerUUID, String playerName);
-	
-	/**
-	 * Get a random tier cluescroll
-	 * 
 	 * Will obey bind option
 	 * 
 	 * @param player The player who will be given this scroll
 	 * @return A cluescroll
+	 * @version 4.8.6
 	 * @since 2.1.8
 	 */
 	public abstract ItemStack getRandomScroll(String mystery, Player player);
@@ -93,35 +72,12 @@ public abstract class ClueScrollsAPI {
 	/**
 	 * Generate a cluescroll of a random tier
 	 * 
-	 * Will not obey bind option
-	 * 
-	 * @param type tier type
-	 * @return A cluescroll
-	 * @since 2.1.0
-	 * @version 2.1.8
-	 */
-	public abstract ItemStack getScroll(String type);
-	
-	/**
-	 * Generate a cluescroll of a random tier
-	 * 
-	 * Will obey bind option
-	 * 
-	 * @param type tier type
-	 * @param playerUUID UUID of player who will be given ths scroll
-	 * @return A cluescroll
-	 * @since 2.1.8
-	 */
-	public abstract ItemStack getScroll(String type, UUID playerUUID, String playerName);
-	
-	/**
-	 * Generate a cluescroll of a random tier
-	 * 
 	 * Will obey bind option
 	 * 
 	 * @param type tier type
 	 * @param player The player who will be given this scroll
 	 * @return A cluescroll
+	 * @version 4.8.6
 	 * @since 2.1.8
 	 */
 	public abstract ItemStack getScroll(String type, Player player);

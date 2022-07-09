@@ -118,12 +118,10 @@ public class PlayerClueCompletedEvent extends Event {
 	
 	//********************************************************************************************************************
 	
-	@Deprecated
 	public HandlerList getHandlers() {
 	    return handlers;
 	}
 	
-	@Deprecated
 	public static HandlerList getHandlerList() {
 	    return handlers;
 	}

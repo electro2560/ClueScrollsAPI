@@ -1,5 +1,6 @@
 package com.electro2560.dev.cluescrolls.events;
 
+import java.util.UUID;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -7,21 +8,21 @@ import org.bukkit.event.HandlerList;
 /**
  * Fired when all the clues on a scroll have been completed issuing the rewards.
  * @since 2.1.0
- * @version 2.1.0
+ * @version 4.8.6
  */
-public class PlayerScrollCompletedEvent extends Event {
+public class PlayerScrollCompletedEvent extends ScrollEvent {
 
 	private static final HandlerList handlers = new HandlerList();
 
 	private final Player player;
-	private String tierType;
-	private int completedClues;
-	
-	public PlayerScrollCompletedEvent(final Player player, final String tierType, final int compeltedClues){
-		
+	private final int completedClues;
+	private boolean cancelRewards = false;
+
+	public PlayerScrollCompletedEvent(final Player player, final String tierType, final UUID scrollUUID, final int compeltedClues) {
+		super(tierType, scrollUUID);
+
 		this.player = player;
 		
-		this.tierType = tierType;
 		this.completedClues = compeltedClues;
 		
 	}
@@ -34,33 +35,44 @@ public class PlayerScrollCompletedEvent extends Event {
 	public final Player getPlayer() {
 		return player;
 	}
-	
-	/**
-	 * Returns the tier type as a string of the completed scroll
-	 * @return Tier type
-	 * @since 2.1.0
-	 */
-	public String getTierType() {
-		return tierType;
-	}
 
 	/**
 	 * Get the amount of clues that were on this scroll
 	 * @return Clues completed
 	 * @since 2.1.0
 	 */
-	public int getCompletedClues() {
+	public final int getCompletedClues() {
 		return completedClues;
 	}
-	
+
+	/**
+	 * Players will not receive rewards if this is true.
+	 * The scroll will be removed from the player as usual.
+	 *
+	 * @return true if the rewards have been cancelled
+	 * @since 4.8.6
+	 */
+	public boolean isCancelRewards() {
+		return cancelRewards;
+	}
+
+	/**
+	 * Setting to true will not give the player rewards.
+	 * The scroll will be removed from the player as usual.
+	 *
+	 * @param cancel true if you wish to cancel this event
+	 * @since 4.8.6
+	 */
+	public void setCancelRewards(boolean cancel) {
+		this.cancelRewards = cancel;
+	}
+
 	//********************************************************************************************************************
 	
-	@Deprecated
 	public HandlerList getHandlers() {
 	    return handlers;
 	}
 	
-	@Deprecated
 	public static HandlerList getHandlerList() {
 	    return handlers;
 	}

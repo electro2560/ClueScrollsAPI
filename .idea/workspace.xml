@@ -5,61 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d02fc54-bc33-4338-8952-c25d2c257807" name="Changes" comment="Additional events&#10;&#10;4.8.6">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ClueScrollsAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/api/CreationCause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/PlayerScrollCreatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/ScrollEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueConfigData.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueConfigData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueDataPair.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueDataPair.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueScrollsAPI.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/ClueScrollsAPI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/CustomClue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/CustomClue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/DataType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/DataType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueConfigData.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueConfigData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueDataPair.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueDataPair.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueScrollsAPI.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/ClueScrollsAPI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/CustomClue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/CustomClue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/DataType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/class-use/DataType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/api/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/PlayerClueCompletedEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/PlayerClueCompletedEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/PlayerScrollCompletedEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/PlayerScrollCompletedEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/class-use/PlayerClueCompletedEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/class-use/PlayerClueCompletedEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/class-use/PlayerScrollCompletedEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/class-use/PlayerScrollCompletedEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/com/electro2560/dev/cluescrolls/events/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/api/ClueScrollsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/api/ClueScrollsAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/PlayerClueCompletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/PlayerClueCompletedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/PlayerScrollCompletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/events/PlayerScrollCompletedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/api/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electro2560/dev/cluescrolls/api/DataType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +90,16 @@
       <workItem from="1643770890906" duration="34000" />
       <workItem from="1644614846979" duration="120000" />
       <workItem from="1657381620251" duration="5700000" />
-      <workItem from="1657388699542" duration="100000" />
+      <workItem from="1657388699542" duration="1372000" />
+      <workItem from="1657565714441" duration="52000" />
+      <workItem from="1657565806119" duration="577000" />
+      <workItem from="1657644595872" duration="3308000" />
+      <workItem from="1658512801895" duration="4295000" />
+      <workItem from="1659122802621" duration="599000" />
+      <workItem from="1659289206778" duration="624000" />
+      <workItem from="1660613254014" duration="622000" />
+      <workItem from="1660925185297" duration="599000" />
+      <workItem from="1664831915974" duration="1203000" />
     </task>
     <task id="LOCAL-00001" summary="Add biome type">
       <created>1644614861035</created>
@@ -152,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644614861035</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Additional events&#10;&#10;4.8.6">
+      <created>1657388870542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657388870543</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Additional events&#10;&#10;4.8.6">
+      <created>1657389366789</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657389366789</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

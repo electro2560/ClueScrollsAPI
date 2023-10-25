@@ -26,15 +26,6 @@ public abstract class ClueScrollsAPI {
 	}
 	
 	/**
-	 * To be used internally ClueScrolls
-	 * 
-	 * @param instance
-	 */
-	public static void setImplementation(ClueScrollsAPI instance) {
-		ClueScrollsAPI.instance = instance;
-	}
-	
-	/**
 	 * Access the ClueScrollsAPI
 	 * 
 	 * @return ClueScrollsAPI instance
@@ -81,6 +72,46 @@ public abstract class ClueScrollsAPI {
 	 * @since 2.1.8
 	 */
 	public abstract ItemStack getScroll(String type, Player player);
+
+	/**
+	 * Check if item is a scroll
+	 *
+	 * @param item An item
+	 * @return True if this item is a scroll
+	 * @version 4.9.0
+	 * @since 4.9.0
+	 */
+	public abstract boolean isScroll(ItemStack item);
+
+	/**
+	 * Check if item is a crystal
+	 *
+	 * @param item An item
+	 * @return True if this item is a crystal
+	 * @version 4.9.0
+	 * @since 4.9.0
+	 */
+	public abstract boolean isCrystal(ItemStack item);
+
+	/**
+	 * Get the tier of a scroll item
+	 *
+	 * @param item A scroll item
+	 * @return The name of the tier or null if not a scroll item
+	 * @version 4.9.0
+	 * @since 4.9.0
+	 */
+	public abstract String getScrollTier(ItemStack item);
+
+	/**
+	 * Get the tier of a crystal item
+	 *
+	 * @param item A scroll item
+	 * @return The name of the tier or null if not a crystal item
+	 * @version 4.9.0
+	 * @since 4.9.0
+	 */
+	public abstract String getCrystalTier(ItemStack item);
 	
 	/**
 	 * To create a custom clue, you must pass your plugin, the name of the clue

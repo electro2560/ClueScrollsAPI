@@ -24,6 +24,15 @@ public abstract class ClueScrollsAPI {
 	public static boolean hasImplementation() {
 		return instance != null;
 	}
+
+	/**
+	 * To be used internally ClueScrolls
+	 *
+	 * @param instance
+	 */
+	public static void setImplementation(ClueScrollsAPI instance) {
+		ClueScrollsAPI.instance = instance;
+	}
 	
 	/**
 	 * Access the ClueScrollsAPI

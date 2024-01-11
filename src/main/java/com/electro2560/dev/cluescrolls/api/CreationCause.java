@@ -15,4 +15,6 @@ public enum CreationCause {
   PLAYER_REVEAL_MYSTERY,
   PLAYER_REVEAL_HIDDEN,
 
+  DEBUG,
+
 }

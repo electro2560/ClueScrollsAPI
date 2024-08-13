@@ -13,6 +13,14 @@ public interface CustomClue {
 	 * @return plugin
 	 */
 	public Plugin getPlugin();
+
+	/**
+	 * Returns the prefix used for this addon's custom clues
+	 *
+	 * Addons that do not register a custom prefix will use the name of the addon plugin
+	 * @return prefix
+	 */
+	public String getPrefix();
 	
 	/**
 	 * Returns the clue name

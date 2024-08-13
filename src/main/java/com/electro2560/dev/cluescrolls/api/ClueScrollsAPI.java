@@ -145,5 +145,30 @@ public abstract class ClueScrollsAPI {
 	 * @param clueConfigData
 	 */
 	public abstract CustomClue registerCustomClue(Plugin plugin, String clueName, ClueConfigData... clueConfigData);
+
+	/**
+	 * To create a custom clue, you must pass your plugin, the name of the clue
+	 * and an array of ClueConfigData. The name of your custom clue will be
+	 * yourPlugin_clueName
+	 *
+	 * The {@link ClueConfigData} represents the different types of data you may want a
+	 * user to be able to specify in their config under the data section of the clue.
+	 *
+	 * To call to update any clues for a player, call {@link CustomClue#handle(Player, ClueDataPair...)}
+	 * passing in the name of the player to update and an array of ClueDataPairs.
+	 *
+	 * {@link ClueDataPair} is similar to {@link ClueConfigData}. You create ClueDataPairs
+	 * to specify the details of what action the user has completed that you'd like to
+	 * update clues for. The {@link ClueDataPair#key} is the name of the data in the
+	 * config for the clue, and is also the key you specified when setting up the ClueConfigData
+	 * for this custom clue. If there is data you wish to ignore entirely, pass a ClueDataPair
+	 * with it's {@link ClueDataPair#value} null.
+	 *
+	 * @param plugin
+	 * @param customPrefix - Specify to use a different prefix than your plugin name
+	 * @param clueName
+	 * @param clueConfigData
+	 */
+	public abstract CustomClue registerCustomClue(Plugin plugin, String customPrefix, String clueName, ClueConfigData... clueConfigData);
 	
 }

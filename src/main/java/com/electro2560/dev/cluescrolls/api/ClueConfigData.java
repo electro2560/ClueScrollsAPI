@@ -1,12 +1,14 @@
 package com.electro2560.dev.cluescrolls.api;
 
+import java.util.Arrays;
+
 /**
  * @version 3.4.7
  */
 public class ClueConfigData {
 	
-	private String configKey;
-	private DataType dataType;
+	private final String configKey;
+	private final DataType dataType;
 	
 	public ClueConfigData(String configKey, DataType dataType){
 		this.configKey = configKey.toLowerCase();
@@ -19,6 +21,24 @@ public class ClueConfigData {
 
 	public DataType getDataType() {
 		return dataType;
+	}
+
+	/**
+	 * @version 5.0.1
+	 */
+	public static final class Builder {
+		ClueConfigData[] pairs = new ClueConfigData[0];
+
+		public ClueConfigData[] build(){
+			return pairs;
+		}
+
+		public ClueConfigData.Builder add(String key, DataType value) {
+			pairs = Arrays.copyOf(pairs, pairs.length + 1);
+			pairs[pairs.length - 1] = new ClueConfigData(key, value);
+			return this;
+		}
+
 	}
 	
 }

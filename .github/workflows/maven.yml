@@ -1,0 +1,57 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 19
+      uses: actions/setup-java@v4
+      with:
+        java-version: '19'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Cache Maven Dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+    
+    #- name: List target directory
+    #  run: ls -al target/
+
+    - name: Find JAR file
+      id: find_jar
+      run: |
+        JAR_FILE=$(find target -name "ClueScrollsAPI-*.jar")
+        FILE_NAME=$(basename "$JAR_FILE")
+        echo "JAR_FILE=$JAR_FILE" >> $GITHUB_ENV
+        echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
+
+    - name: Upload JAR Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.FILE_NAME }}
+        path: ${{ env.JAR_FILE }}
+
+    - name: Confirm Uploaded File
+      run: |
+        echo "Uploaded JAR file: ${{ env.FILE_NAME }}"

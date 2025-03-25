@@ -51,6 +51,7 @@ jobs:
       with:
         name: ${{ env.FILE_NAME }}
         path: ${{ env.JAR_FILE }}
+        retention-days: 400
 
     - name: Confirm Uploaded File
       run: |
